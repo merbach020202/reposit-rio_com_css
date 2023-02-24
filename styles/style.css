@@ -17,7 +17,7 @@ body {
 .container-grid {
     width: 80%;
     margin: 0 auto;
-    background-color: purple;
+    /* background-color: purple; */
 }
 
 
@@ -34,7 +34,6 @@ header .header-flex {
 header h1 {
     color:white;
     font-weight: 300;
-    border: 2px solid white;
 }
 
 header h1 #logoux{
@@ -43,7 +42,10 @@ header h1 #logoux{
 }
 
 header nav {
-    border: 2px solid white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
 }
 
 
@@ -51,6 +53,18 @@ header nav a {
     color:white;
     text-decoration: none;
 }
+
+#paragrafo {
+    display: flex;
+    margin-top: 10px;
+}
+
+#aside {
+    display:flex;
+    align-items:flex-start;
+    justify-content: ;
+}
+
 
 
     
