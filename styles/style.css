@@ -1,6 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600&display=swap');
-
-/* RESET DE PROPRIEDADE */
 * {
     margin: 0;
     padding: 0;
@@ -9,21 +7,19 @@
 
 body {
     font-family: 'Quicksand', sans-serif;
-    color:grey;
+    color: grey;
+    background-color: #edeced;
 }
-
-/* CONFIGURAÇÕES GENÉRICAS */
 
 .container-grid {
-    width: 80%;
-    margin: 0 auto;
-    /* background-color: purple; */
+    width: 100%;     /* largura padrão, não precisaria colocar  */
+    max-width: 1000px;  /* limite máximo de largura */
+    min-width: 992px;   /* limite mínimo de largura */
+    margin: 0 auto;     /* margem laterais automáticas - centraliza o elemento */
 }
 
-
-/***** cabeçalho *****/
 header {
-    background-color:grey;
+    background-color: rgb(75, 71, 71);
 }
 
 header .header-flex {
@@ -32,44 +28,115 @@ header .header-flex {
 }
 
 header h1 {
-    color:white;
+    color: white;
     font-weight: 300;
 }
 
-header h1 #logoux{
+header h1 #logoux {
     font-style: italic;
     font-weight: 700;
 }
 
+/* main h2 {
+    display: flex;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+main h3 {
+    display: flex;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+} */
+
+
+
 header nav {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     width: 300px;
 }
 
-
 header nav a {
-    color:white;
+    color: white;
     text-decoration: none;
 }
 
-#paragrafo {
+main .colunas-flex {
     display: flex;
-    margin-top: 10px;
+
 }
 
 #aside {
-    display:flex;
-    align-items:flex-start;
-    justify-content: ;
+    display: flex;
+    align-items: flex-start;
 }
 
 
+main .colunas-flex {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
 
+main .coluna1 {
+    width: 75%;
+    background-color: white;
+    line-height: 24px;
+}
+
+main .coluna1 h2 {
+    /* margin-bottom: 5px;
+    margin-left: 20px;
+    margin-right: 5px; */
+
+    margin: 20px;
+}
+
+main .coluna1 p {    
+    /* margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px; */
     
+    margin: 0 20px 20px 20px;
+    
+    line-height: 24px
+}
+
+
+/* aside com a class coluna2 */
+
+main .coluna2 {
+    width: 20%;
+}
+
+main .coluna2 article {
+    background-color: white;
+}
+
+#lapis{
+    width: 100%;
+}
+
+
+footer {
+    background-color: rgb(75, 71, 71);
+    padding: 15px;
+    color: white;
     
 
+}
+
+footer p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
 
 
 
