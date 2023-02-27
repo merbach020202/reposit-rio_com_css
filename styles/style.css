@@ -129,14 +129,11 @@ footer {
     background-color: rgb(75, 71, 71);
     padding: 15px;
     color: white;
-    
+    margin-top: 50px;
 
 }
 
-footer p {
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
+
 
 
 
